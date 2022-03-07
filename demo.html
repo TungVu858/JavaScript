@@ -5,28 +5,32 @@
     <title>Title</title>
 </head>
 <body>
-    <button type="button" onclick="showMessage();">Click me</button>
+    <button type="button" id="demo">Click me</button>
     <script>
+        var demo = document.getElementById("demo");
+        demo.addEventListener("click",showMessage);
         function showMessage(){
-            alert('Xin chào');
+           document.write('hehe')
+           // demo.innerHTML = "Xin chào";
+            console.log('hoho')
         }
     </script>
     <div id="messageDiv"></div>
-    <button type="button" onclick="showMessage()">Click me</button>
+    <button type="button" onclick="showMessage1()">Click me</button>
     <script>
-        function showMessage(){
+        function showMessage1(){
             document.getElementById('messageDiv').innerHTML="Xin chào";
         }
     </script>
-    <button type="button" onclick="showMessage()">Click me</button>
+    <p  onclick="showMessage2()">Click me</p>
     <script>
-        function showMessage(){
+        function showMessage2(){
             document.write('Xin chào');
         }
     </script>
-    <button type="button" onclick="showMessage()">Click me</button>
+    <button  onclick="showMessage3()">Click me</button>
     <script>
-        function showMessage(){
+        function showMessage3(){
             console.log('Xin chào');
         }
     </script>

@@ -5,13 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-    <button type="button" onclick="alert('Xin chào');">Click me</button>
-    <button type="button" onclick="showMessage();">Click me</button>
-        <script>
-            function showMessage(){
-                alert('Xin chào');
-            }
-        </script>
-        <script src="alert.js"></script>
+<button id="demo">Click</button>
+<button type="button" id="demo1">Click me</button>
+<script>
+    var demo = document.getElementById("demo");
+    function clickFunction() {
+        document.write('Click me');
+    }
+    demo.addEventListener("click", clickFunction);
+
+    // function showMessage() {
+    //     alert('Xin chào');
+    //
+    // }
+</script>
+<script src="alert.js"></script>
 </body>
 </html>
